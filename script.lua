@@ -1,6 +1,8 @@
 
 
 
+
+
 -- loadfile('SB2 Script/SCRIPT.lua')()
 -- loadstring(game:HttpGet('https://raw.githubusercontent.com/SphirX/Swordburst-/main/script.lua'))()
 if getgenv().SB2Script then
@@ -258,19 +260,17 @@ local mobs_on_floor = {
     [13965775911] = {}, -- atheon's realm
 
     [11331145451] = { -- HALLOWEEN EVENT
-        "Sorcerer",
-        "Spiritual Hound",
-        "Stone Gargoyle",
-        "Black Widow",
-        "Mutated Pumpkin",
-        "Bloodshard Spider",
-        "Candy Chest",
-        "Hostile Omen",
-        "Elkwood Giant",
-        "Cursed Skeleton",
-        "Harbinger",
-        "Mud Brute",
-        "Pumpkin Reaper"
+        "Rotten Brute",
+        "Cursed Giant",
+        "Dark Spirit",
+        "Abyssal Spider",
+        "Crumbling Gargoyle",
+        "Decayed Warrior",
+        "Vampiric Bat",
+        "Count Dracula, Vlad Tepes",
+        "Headless Horseman",
+        "Enraged Wendigo",
+        "Tremor"
     },
 
     [13051622258] = { -- EASTER EVENT
@@ -361,9 +361,9 @@ local bosses_on_floor = {
     },
 
     [11331145451] = { -- halloween
-        "Magnor, the Necromancer",
-        "Bulswick, the Elkwood Behemoth",
-        "Egnor, the Undead King",
+        "Tremor",
+        "Enraged Wendigo",
+        "Count Dracula, Vlad Tepes",
         "Headless Horseman"
     },
 
@@ -416,7 +416,7 @@ local settings = { -- defaults
     Prioritized_Boss = nil,
     Mob_Priority = false,
     Prioritized_Mob = nil,
-    KA = false,
+    KA = true,
     KA_Range = 30,
     AutoEquip = false,
     InfSprint = false,
@@ -3093,4 +3093,5 @@ do
         end
     })
 end
+    
 
